@@ -5,7 +5,7 @@
          {
             "appID": "9R2ASTQN4R.com.summit.synq",
             "paths": [
-             "/links/*"
+             "*"
             ]
          }
       ]

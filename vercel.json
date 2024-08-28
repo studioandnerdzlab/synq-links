@@ -1,11 +1,24 @@
 {
   "headers": [
     {
-      "source": "/.well-known/apple-app-site-association",
+      "source": "/well-known/(.*)",
       "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "max-age=3600"
+        },
         {
           "key": "Content-Type",
           "value": "application/json"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
         }
       ]
     }

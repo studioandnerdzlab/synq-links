@@ -32,5 +32,10 @@
       "source": "/(.*)",
       "destination": "/index.html"
     }
-  ]
+  ],
+  "version": 2,
+  "public": false,
+  "github": {
+    "enabled": false
+  }
 }

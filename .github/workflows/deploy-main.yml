@@ -1,0 +1,24 @@
+# name your action
+name: Vercel dev deploy
+
+on:
+  push:
+    # input the name of the branch
+    branches: ['main']
+  pull_request:
+    # input the name of the branch
+    branches: ['main']
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy via vercel
+        uses: fjogeleit/http-request-action@v1
+        with:
+          # put the hook url here
+          url: 'https://api.vercel.com/v1/integrations/deploy/prj_shqjxB1mVMSF2pYyPNNx9R8tLuAZ/YEfZUr8WX9'
+          method: 'POST'

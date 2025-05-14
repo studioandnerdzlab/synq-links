@@ -1,3 +1,3 @@
 # synq-links
 
-update2
+update

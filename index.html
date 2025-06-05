@@ -17,16 +17,44 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            
+            padding: 20px;
+            box-sizing: border-box;
         }
         .logo-container {
             text-align: center;
+            width: 100%;
+            max-width: 800px;
         }
         .logo-container a {
             display: inline-block;
         }
         .logo-container svg {
-            width: 500px;
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+        }
+        h3 {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            padding: 0 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .logo-container svg {
+                max-width: 300px;
+            }
+            h3 {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .logo-container svg {
+                max-width: 200px;
+            }
+            h3 {
+                font-size: 0.9rem;
+            }
         }
     </style> 
     
